@@ -1,0 +1,29 @@
+.banner {
+    background: #e5b63d;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+  }
+  
+  .banner__content {
+    padding: 8px;
+    max-width: 95vw;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .banner__text {
+    flex-grow: 1;
+    line-height: 1.4;
+    font-family: "Quicksand", sans-serif;
+    color: #fff;
+  }
+
+  a {
+    text-decoration: none;
+  }
+  
