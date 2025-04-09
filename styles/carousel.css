@@ -18,7 +18,7 @@
   .slider {
     background: white;
     box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.125);
-    height: 40vh;
+    height: 300px;
     margin: auto;
     overflow: hidden;
     position: relative;
@@ -29,7 +29,7 @@
     content: "";
     height: 100vh;
     position: absolute;
-    width: 45vh;
+    width: 25vw;
     z-index: 2;
   }
   .slider::after {
@@ -54,17 +54,10 @@
 
   /* RESPONSIVE */
 @media (max-width: 768px) {
-  .slider {
-    height: 35vh;
-  }
-  .slider::before, .slider::after {
-    height: 100vh;
-    width: 43vh;
-  }
   .slider .slide-track {
-    width: calc(45vh * 14);
-  }
-  .slider .slide {
-    height: 35vh;
+    -webkit-animation: scroll 70s linear infinite;
+            animation: scroll 70s linear infinite;
+    display: flex;
+    width: calc(45vw * 14);
   }
 }
